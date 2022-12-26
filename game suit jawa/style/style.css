@@ -1,0 +1,61 @@
+html {
+}
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-image: url(../img/bg.png);
+  text-align: center;
+}
+h1 {
+  text-align: center;
+  font-size: 3em;
+  color: #bbb;
+  text-shadow: 3px 3px 3px white;
+}
+.container {
+  margin: auto;
+  width: 60vh;
+  height: 60vh;
+  /* background-color: white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  position: relative;
+}
+.kotak {
+  background-color: black;
+  height: 50%;
+  margin: 3px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.atas {
+  background-image: linear-gradient(to bottom right, red, blue, white);
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.bulat {
+  width: 25%;
+  height: 50%;
+  border-radius: 100%;
+}
+.bulat:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 0px 3px 3px white;
+}
+.bawah {
+  background-image: linear-gradient(to top left, blue, yellow);
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: blue;
+}
+.info {
+  position: absolute;
+  width: 30%;
+  height: 15%;
+  background-color: white;
+  border-radius: 10px;
+  left: 35%;
+  border: 5px solid rgb(202, 10, 10);
+}

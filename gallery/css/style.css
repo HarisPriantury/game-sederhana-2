@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  text-align: center;
+  background-color: rgb(62, 56, 56);
+}
+.container {
+  line-height: 0;
+  width: 600px;
+  margin: 20px auto;
+  border: 2px solid white;
+  overflow: auto;
+}
+.container .thumbnail {
+  box-sizing: border-box;
+}
+.thumbnail img {
+  float: left;
+  border: 2px solid aqua;
+  box-sizing: border-box;
+}
+.thumbnail img:hover {
+  opacity: 50%;
+  cursor: pointer;
+}
+
+/* membuat animasi */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.fade {
+  animation: fadeIn 1.5s forwards;
+}
+.active {
+  opacity: 0.5;
+}
